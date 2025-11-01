@@ -1,7 +1,12 @@
 ---
-layout: layout.liquid
-title: 11ty Boilerplate
+layout: "base"
+title: "Home"
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<h1>Three things I never leave home without</h1>
+
+<section class="items-grid">
+    {% itemcard "Waterbottle", "/things/waterbottle/", "/images/waterbottle.jpeg", "My Waterbottle, been there since day 1." %}
+    {% itemCard "Bag", "/things/bag/", "/images/bag.jpeg", "My Bag - Carries most of the necessities." %}
+    {% itemCard "Airpods", "/things/airpods/", "/images/airpods.jpeg", "My Airpods - These are what keep me sane during the day." %}
+</section>

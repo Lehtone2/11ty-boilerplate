@@ -1,0 +1,26 @@
+<doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ title | default: "Everyday Carry" }}</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+    <h1><a href="/">Everyday Carry</a><h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+    </nav>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer>
+        <p>© {{ "now" | date: "%Y" }} — My Everyday Carry</p>
+    </footer>
+</body>
+</html>
