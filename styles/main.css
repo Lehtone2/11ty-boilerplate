@@ -1,48 +1,94 @@
 :root {
-    --bg: #fdfdfd;
-    --accent: #2b7a78;
-    --text: #333;
-    --card-bg: #ffffff;
+    --black: #000000;
+    --dark-teal: #586f7c;
+    --light-teal: #b8dbd9;
+    --off-white: #f4f4f9;
+    --dark-green: #04724d;
 }
 
 body {
     font-family: "Segoe UI", sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    background: var(--off-white);
+    color: var(--black);
     margin: 0;
     padding: 0;
 }
 
-header {
-    background: var(--accent);
-    color: white;
-    padding: 1rem;
+a {
+    color: var(--off-white);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-header a {
-    color: white;
+a:hover {
+    color: var(--light-teal);
+}
+
+header {
+    background: var(--dark-teal);
+    color: var(--off-white);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+header nav a {
+    color: var(--off-white);
     text-decoration: none;
-    margin-right: 1rem;
+    font-weight: bold;
+    margin: 0 1rem;
 }
 
 main {
     max-width: 900px;
     margin: 1rem auto;
     padding: 0 1rem;
+    padding-bottom: 4rem;
+}
+
+h1.main-heading {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--dark-green);
+}
+
+h1, h2 {
+    color: var(--dark-green);
 }
 
 .items-grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
 }
 
 .item-card {
-    background: var(--card-bf);
+    background: var(--light-teal);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 1rem;
     text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 .item-thumb {
@@ -50,15 +96,19 @@ main {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-}
-
-h1, h2 {
-    color: var(--accent);
+    margin-bottom: 0.75rem;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-    color: #555;
+    color: var(--off-white);
+    background-color: var(--dark-teal);
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
+

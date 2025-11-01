@@ -1,6 +1,6 @@
 ---
 title: "Airpods"
-layout: "base"
+layout: "layout"
 image: "/images/airpods.jpeg"
 excerpt: "My Airpods - These are what keep me sane during the day."
 ---

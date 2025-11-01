@@ -1,6 +1,6 @@
 ---
 title: "Bag"
-layout: "base"
+layout: "layout"
 image: "/images/bag.jpeg"
 excerpt: "My Bag - Carries most of the necessities."
 ---

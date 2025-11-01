@@ -1,6 +1,6 @@
 ---
 title: "Waterbottle"
-layout: "base"
+layout: "layout"
 image: "/images/waterbottle.jpeg"
 excerpt: "My Waterbottle, been there since day 1."
 ---

@@ -1,22 +1,30 @@
 ---
-title: 11ty Boilerplate
+title: My Daily Carries
 ---
 
-<!DOCTYPE html>
+<doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
-  <link rel="stylesheet" href="/styles/screen.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ title | default: "Everyday Carry" }}</title>
+  <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
-  </nav>
-    {{ content }}
+    <header class="site-header">
+    <h1><a href="/">Everyday Carry</a><h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+    </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>© {{ "now" | date: "%Y" }} — My Everyday Carry</p>
+    </footer>
 </body>
 </html>

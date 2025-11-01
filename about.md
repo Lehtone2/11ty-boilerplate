@@ -1,7 +1,10 @@
 ---
-layout: layout.liquid
-title: About
+layout: "layout"
+title: "About"
 ---
 
-# About the 11ty **Boilerplate**
-<img class="about" alt="pine" src="/images/pine.png" width="50" />
+Hi! I'm Jacob, a student and web developer.  
+
+This site showcases the three everyday items I never leave home without, along with descriptions and photos.  
+
+I created this site using 11ty, Liquid templates, and CSS for styling.
