@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("styles");
 
-  eleventyConfig.addShortcode("itemcard", function(title, url, image, excerpt){
+  eleventyConfig.addShortcode("itemCard", function(title, url, image, excerpt){
     return `
     <article class="item-card">
       <a href="${url}">
